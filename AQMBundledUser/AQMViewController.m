@@ -7,6 +7,7 @@
 //
 
 #import "AQMViewController.h"
+#import "../Classes/AQMBundledUser.h"
 
 @interface AQMViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSLog(@"%@", [[AQMBundledUser currentUser] userToken]);
+    NSLog(@"%@", [[AQMBundledUser currentUser] secretKey]);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
