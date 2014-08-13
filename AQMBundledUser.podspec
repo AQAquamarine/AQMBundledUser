@@ -11,4 +11,6 @@ Pod::Spec.new do |s|
   #s.exclude_files = "Classes/Exclude"
   s.requires_arc = true
   s.platform = "ios", '7.0'
+  s.dependency  'LUKeychainAccess', '~> 1.2'
+  s.dependency 'AQMSecureRandom', '0.0.2'
 end
