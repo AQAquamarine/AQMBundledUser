@@ -1,0 +1,13 @@
+PODS:
+  - AQMSecureRandom (0.0.1)
+  - LUKeychainAccess (1.2.2)
+
+DEPENDENCIES:
+  - AQMSecureRandom
+  - LUKeychainAccess
+
+SPEC CHECKSUMS:
+  AQMSecureRandom: d1626f9bba3237dc652b03a69609911ed4b104e8
+  LUKeychainAccess: 4365689e03b1a019ce40a86058aae6e31e9adcea
+
+COCOAPODS: 0.33.1
