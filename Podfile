@@ -1,4 +1,11 @@
 platform :ios, '7.0'
 
-pod 'LUKeychainAccess'
-pod 'AQMSecureRandom'
+target "AQMBundledUser" do
+  pod 'LUKeychainAccess'
+  pod 'AQMSecureRandom'
+end
+
+target "AQMBundledUserTests" do
+  pod 'Specta'
+  pod 'Expecta'
+end
