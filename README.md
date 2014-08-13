@@ -1,6 +1,8 @@
 AQMBundledUser
 ==============
 
+![](http://img.shields.io/cocoapods/v/AQMBundledUser.svg?style=flat)
+
 Device-tied user model which provides a user token and a secret key generated securely.
 
 ```objc
