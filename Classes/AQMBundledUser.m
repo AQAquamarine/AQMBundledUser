@@ -24,10 +24,10 @@ NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
 }
 
 - (NSString *)secretToken {
-    if (!self.userToken) {
-        self._userToken = [self getSecretTokenFromKeyChain];
+    if (!self._secretToken) {
+        self._secretToken = [self getSecretTokenFromKeyChain];
     }
-    return self._userToken;
+    return self._secretToken;
 }
 
 # pragma mark - Private methods

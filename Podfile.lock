@@ -1,5 +1,5 @@
 PODS:
-  - AQMSecureRandom (0.0.1)
+  - AQMSecureRandom (0.0.2)
   - Expecta (0.3.1)
   - LUKeychainAccess (1.2.2)
   - Specta (0.2.1)
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - Specta
 
 SPEC CHECKSUMS:
-  AQMSecureRandom: d1626f9bba3237dc652b03a69609911ed4b104e8
+  AQMSecureRandom: 3a713255d394a9cc4a9121395fec62090cadf92a
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   LUKeychainAccess: 4365689e03b1a019ce40a86058aae6e31e9adcea
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
