@@ -33,7 +33,7 @@ NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
 # pragma mark - Private methods
 
 - (NSString *)getUserTokenFromKeyChain {
-    NSString *userToken = [[[LUKeychainAccess standardKeychainAccess] valueForKey:kAQMBundledUserUserTokenKey] stringValue];
+    NSString *userToken = [[LUKeychainAccess standardKeychainAccess] stringForKey:kAQMBundledUserUserTokenKey];
     if (userToken) {
         return userToken;
     }
@@ -47,7 +47,7 @@ NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
 }
 
 - (NSString *)getSecretTokenFromKeyChain {
-    NSString *secretToken = [[[LUKeychainAccess standardKeychainAccess] valueForKey:kAQMBundledUserSecretTokenKey] stringValue];
+    NSString *secretToken = [[LUKeychainAccess standardKeychainAccess] stringForKey:kAQMBundledUserSecretTokenKey];
     if (secretToken) {
         return secretToken;
     }
