@@ -3,7 +3,7 @@
 #import <AQMSecureRandom.h>
 
 NSString *const kAQMBundledUserUserTokenKey = @"AQMBundledUserToken";
-NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
+NSString *const kAQMBundledUserSecretKeyKey = @"AQMBundledSecretKey";
 
 @implementation AQMBundledUser
 
@@ -23,11 +23,11 @@ NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
     return self._userToken;
 }
 
-- (NSString *)secretToken {
-    if (!self._secretToken) {
-        self._secretToken = [self getSecretTokenFromKeyChain];
+- (NSString *)secretKey {
+    if (!self._secretKey) {
+        self._secretKey = [self getSecretKeyFromKeyChain];
     }
-    return self._secretToken;
+    return self._secretKey;
 }
 
 # pragma mark - Private methods
@@ -46,17 +46,17 @@ NSString *const kAQMBundledUserSecretTokenKey = @"AQMBundledSecretToken";
     return uuid;
 }
 
-- (NSString *)getSecretTokenFromKeyChain {
-    NSString *secretToken = [[LUKeychainAccess standardKeychainAccess] stringForKey:kAQMBundledUserSecretTokenKey];
-    if (secretToken) {
-        return secretToken;
+- (NSString *)getSecretKeyFromKeyChain {
+    NSString *secretKey = [[LUKeychainAccess standardKeychainAccess] stringForKey:kAQMBundledUserSecretKeyKey];
+    if (secretKey) {
+        return secretKey;
     }
-    return [self storeSecretToken];
+    return [self storeSecretKey];
 }
 
-- (NSString *)storeSecretToken {
+- (NSString *)storeSecretKey {
     NSString *secret = [AQMSecureRandom randomString:256];
-    [[LUKeychainAccess standardKeychainAccess] setString:secret forKey:kAQMBundledUserSecretTokenKey];
+    [[LUKeychainAccess standardKeychainAccess] setString:secret forKey:kAQMBundledUserSecretKeyKey];
     return secret;
 }
 

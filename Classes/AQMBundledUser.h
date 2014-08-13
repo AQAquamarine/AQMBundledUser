@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
 
 extern NSString *const kAQMBundledUserUserTokenKey;
-extern NSString *const kAQMBundledUserSecretTokenKey;
+extern NSString *const kAQMBundledUserSecretKeyKey;
 
 @interface AQMBundledUser : NSObject
 
-@property (nonatomic, retain) NSString *_userToken, *_secretToken;
+@property (nonatomic, retain) NSString *_userToken, *_secretKey;
 
 + (instancetype)currentUser;
 
 - (NSString *)userToken;
-- (NSString *)secretToken;
+- (NSString *)secretKey;
 
 @end

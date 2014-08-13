@@ -25,6 +25,7 @@
 		D476B071199B16F300E61C7C /* AQMBundledUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B070199B16F300E61C7C /* AQMBundledUserTests.m */; };
 		D476B07D199B175900E61C7C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D476B07C199B175900E61C7C /* Podfile */; };
 		D476B080199B18DB00E61C7C /* AQMBundledUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B07F199B18DB00E61C7C /* AQMBundledUser.m */; };
+		D476B082199B93F100E61C7C /* AQMBundledUser.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D476B081199B93F100E61C7C /* AQMBundledUser.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D476B07C199B175900E61C7C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D476B07E199B18DB00E61C7C /* AQMBundledUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQMBundledUser.h; sourceTree = "<group>"; };
 		D476B07F199B18DB00E61C7C /* AQMBundledUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMBundledUser.m; sourceTree = "<group>"; };
+		D476B081199B93F100E61C7C /* AQMBundledUser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AQMBundledUser.podspec; sourceTree = "<group>"; };
 		DF3960730A734EDC897991AD /* libPods-AQMBundledUserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AQMBundledUserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89F1A5ADF0F485E8DA44FEA /* Pods-AQMBundledUser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQMBundledUser.xcconfig"; path = "Pods/Pods-AQMBundledUser.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D476B07C199B175900E61C7C /* Podfile */,
+				D476B081199B93F100E61C7C /* AQMBundledUser.podspec */,
 				D476B07B199B174C00E61C7C /* Classes */,
 				D476B04B199B16F300E61C7C /* AQMBundledUser */,
 				D476B06A199B16F300E61C7C /* AQMBundledUserTests */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D476B05E199B16F300E61C7C /* Images.xcassets in Resources */,
+				D476B082199B93F100E61C7C /* AQMBundledUser.podspec in Resources */,
 				D476B050199B16F300E61C7C /* InfoPlist.strings in Resources */,
 				D476B07D199B175900E61C7C /* Podfile in Resources */,
 				D476B059199B16F300E61C7C /* Main.storyboard in Resources */,
